@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <a href="" id="logo">
@@ -16,31 +18,70 @@
         </a>
         <div id="desktop">
 
-           
-             <li><a href="">Şirkət</a></li>
+
+            <li><a href="">Şirkət</a></li>
             <li><a href="">Müştəri rəyləri</a></li>
             <li><a href="">Turlar</a></li>
             <li><a href="">Xidmətlər</a></li>
             <li><a href="">Azərbaycanı Kəşf Et</a></li>
             <li><a href="">Əlaqə</a></li>
-            </div>
+        </div>
         <i onclick="show()" class="fa-solid fa-bars barsi"></i>
-        
+
         <nav>
             <i onclick="show()" class="fa-solid fa-x bagla"></i>
             <a href="" id="logo">
                 <img src="logo.png" alt="logo">
             </a>
             <ul id="menu">
-                <li><a href="">Şirkət</a></li>
-                <li><a href="">Müştəri rəyləri</a></li>
-                <li><a href="">Turlar</a></li>
+                <li class="goster">
+                    <a href="">Şirkət
+                        <img src="arow.svg" alt="">
+                    </a>
+                    <ul class=" drop">
+                        <li><a href="">Haqqımızda</a></li>
+                        <li><a href="">Sertifikatlar</a></li>
+                        <li><a href="">Karyera</a></li>
+                    </ul>
+                </li>
+                </li>
+                <li class="goster"> <a href="">Müştəri rəyləri </a>
+                    <img src="arow.svg" alt="">   
+                    <ul class="drop">
+                        <li><a class="drop-link" href="/reyler/">Müştəri fikirləri</a></li>
+                        <li><a class="drop-link" href="/seyahet-goruntuleri/">Səyahət görüntüləri</a></li>
+                    </ul>
+                </li>
+                <li class="goster">
+                    <a href="">Turlar </a>
+                    <img src="arow.svg" alt="">   
+                    <ul class="drop">
+                        <li>
+                            <a href="/daxili-turlar/">Daxili turlar</a>
+                        </li>
+                        <li>
+                            <a href="/xarici-turlar/">Xarici turlar</a>
+                        </li>
+                        <li>
+                            <a href="/infoturlar/">İnfoturlar</a>
+                        </li>
+                        <li>
+                        <a href="/intensiv-turlar/">İnsentiv turlar</a>
+                    </li>
+                    <li>
+                        <a href="/qrup-turlari/">Qrup turları</a>
+                    </li>
+                    <li>
+                        <a href="/ekskursiyalar/">{ekskursiyalar}</a>
+                    </li>
+                </ul>
+            </li>
                 <li><a href="">Xidmətlər</a></li>
                 <li><a href="">Azərbaycanı Kəşf Et</a></li>
                 <li><a href="">Əlaqə</a></li>
                 <button>Qiymət təklifi al</button>
             </ul>
-           
+
             <div class="social socialb">
                 <a href="https://www.facebook.com/profile.php?id=100095147172935&amp;mibextid=ZbWKwL" target="_blank">
                     <i class="fa-brands fa-facebook-f socialcolors"></i>
@@ -61,16 +102,20 @@
                 <li><a href="https://eratur.az/az/"><img src="russianflag.png" alt="Azerbaijan">az</a></li>
             </ul>
 
-            
+
         </nav>
-        
-            
+
+
     </header>
     <script>
         const nav = document.querySelector("nav")
-        function show(){
+        const droplar = document.querySelector("droplar")
+
+        function show() {
             nav.classList.toggle('left')
         }
+    
     </script>
 </body>
+
 </html>

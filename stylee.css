@@ -153,7 +153,26 @@ button{
     }
 }
 
- 
+
+
+  #menu img{
+
+    width: 10px;
+   object-fit: cover;
+    transform: rotate(-180deg);
+ }
+ .drop li a{
+    margin: 10px 0;
+ }
+ .drop{
+    display: none;
+ }
+ .goster:hover{
+    .drop{
+        display: block;
+    } 
+    
+ }
 @media only screen and (min-width: 768px){
     header img{
         display: none;
