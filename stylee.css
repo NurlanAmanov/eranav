@@ -170,6 +170,7 @@ button{
  .goster:hover{
     .drop{
         display: block;
+        transition: .2s all;
     } 
     
  }
