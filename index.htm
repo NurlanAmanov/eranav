@@ -18,9 +18,7 @@
         </a>
         <div id="desktop">
                 <li class="goster">
-                    <a href="">Şirkət
-                      
-                    </a>
+                    <a href="">Şirkət</a>
                     <ul class=" drop">
                         <li><a href="">Haqqımızda</a></li>
                         <li><a href="">Sertifikatlar</a></li>
@@ -76,67 +74,48 @@
         <i onclick="show()" class="fa-solid fa-bars barsi"></i>
 
         <nav>
-            <i onclick="show()" class="fa-solid fa-x bagla"></i>
+            <span>  <i onclick="show()" class="fa-solid fa-x bagla"></i> </span>
+           
             <a href="" id="logo">
                 <img src="logo.png" alt="logo">
             </a>
             <ul id="menu">
-                <li class="goster">
-                    <a href="">Şirkət
-                        <img src="arow.svg" alt="">
-                    </a>
-                    <ul class=" drop">
-                        <li><a href="">Haqqımızda</a></li>
-                        <li><a href="">Sertifikatlar</a></li>
-                        <li><a href="">Karyera</a></li>
-                    </ul>
-                </li>
-                </li>
-                <li class="goster"> <a href="">Müştəri rəyləri </a>
-                    <img src="arow.svg" alt="">   
+                <li>
+                    <a  href="#" onclick="dropdown(this)">Şirkət <i class="fa-solid fa-arrow-right"></i></a>
                     <ul class="drop">
-                        <li><a class="drop-link" href="/reyler/">Müştəri fikirləri</a></li>
-                        <li><a class="drop-link" href="/seyahet-goruntuleri/">Səyahət görüntüləri</a></li>
-                    </ul>
-                </li>
-                <li class="goster">
-                    <a href="">Turlar </a>
-                    <img src="arow.svg" alt="">   
-                    <ul class="drop">
-                        <li>
-                            <a href="/daxili-turlar/">Daxili turlar</a>
-                        </li>
-                        <li>
-                            <a href="/xarici-turlar/">Xarici turlar</a>
-                        </li>
-                        <li>
-                            <a href="/infoturlar/">İnfoturlar</a>
-                        </li>
-                        <li>
-                        <a href="/intensiv-turlar/">İnsentiv turlar</a>
-                    </li>
-                    <li>
-                        <a href="/qrup-turlari/">Qrup turları</a>
-                    </li>
-                    <li>
-                        <a href="/ekskursiyalar/">{ekskursiyalar}</a>
-                    </li>
+                    <li>Haqqqimizda</li>
+                    <li>Sertifikatlar</li>
+                    <li>Karyera</li>
                 </ul>
-            </li>
-                <li><a href="">Xidmətlər</a></li>
-                <li class="goster"><a href="">Əməkdaşlıq</a>
-                    <img src="arow.svg" alt="">   
+                </li>
+                <li>
+                    <a href="#" onclick="dropdown(this)">Müştəri rəyləri <i class="fa-solid fa-arrow-right"></i></a>
                     <ul class="drop">
-                        <li>
-                            <a href="/avia-companies/">Avia Şirkətlər</a>
-                        </li>
-                        <li>
-                            <a href="/korporativ-emekdasliq/">Korporativ əməkdaşlıq</a>
-                        </li><li>
-                        
-                    </li></ul></li>
-                <li><a href="">Azərbaycanı Kəşf Et</a></li>
-                <li><a href="">Əlaqə</a></li>
+                        <li>Musteri Fikirleri</li>
+                        <li>Seyahet goruntuleri</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="dropdown(this)">Turlar <i class="fa-solid fa-arrow-right"></i></a>
+                    <ul class="drop">
+                        <li>Daxili Turlar</li>
+                        <li>Xarici Turlar</li>
+                        <li>InforTurlar</li>
+                        <li>Insentiv Turlar</li>
+                        <li>Qrup Turlar</li>
+                        <li>Ekskursiyalar</li>
+                    </ul>
+                </li>
+                <li><a href="#">Xidmətlər</a></li>
+                <li>
+                    <a href="#" onclick="dropdown(this)">Emekdasliq<i class="fa-solid fa-arrow-right"></i></a>
+                    <ul class="drop">
+                        <li>Avia Sirketler</li>
+                        <li>Korporativ Emekdasliq</li>
+                    </ul>
+                </li>
+                <li><a href="#">Azərbaycanı Kəşf Et</a></li>
+                <li><a href="#">Əlaqə</a></li>
                 <button>Qiymət təklifi al</button>
             </ul>
 
@@ -172,6 +151,10 @@
         function show() {
             nav.classList.toggle('left')
         }
+        function dropdown(element){
+                const drop = element.nextElementSibling;
+                drop.classList.toggle('block')
+            }   
     
     </script>
 </body>

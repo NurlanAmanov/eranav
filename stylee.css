@@ -50,10 +50,10 @@ nav {
     height: 100vh;
     background: #fff;
     text-align: center;
-    transition: .3s all;
+    transition: .5s all;
     z-index: 1001;
 }
-.bagla{
+span{
     text-align: end;
     margin: 20px; 
     font-size: 20px;
@@ -79,7 +79,13 @@ button{
     padding: 14px 20px 14px 20px;
    
 }
-
+.drop li{ 
+  
+    font-size: 1.2em;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #7a4b92;
+}
 #menu li {
     padding: 14px 20px 14px 20px;
 
@@ -152,26 +158,19 @@ button{
      
     }
 }
-
-  #menu img{
-
-    width: 10px;
-   object-fit: cover;
-    transform: rotate(-180deg);
- }
- .drop li a{
-    margin: 10px 0;
- }
- .drop{
+#menu i{
+    transform: rotate(40deg)
+}
+.drop {
     display: none;
- }
- .goster:hover{
-    .drop{
-        display: block;
-        transition: .2s all;
-    } 
-    
- }
+}
+
+.drop.block {
+    display: block;
+}
+
+
+
 @media only screen and (min-width: 768px){
 
     header img{
